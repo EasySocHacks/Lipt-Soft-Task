@@ -1,10 +1,17 @@
-import alphabet.english.EnglishAlphabet
-import token.Character
-import token.One
+import search.IntellijIdeaIshSearcher
 
 fun main(args: Array<String>) {
-    val pattern = "hello"
+    val intellijIdeaIshSearcher = IntellijIdeaIshSearcher(listOf(
+        "a.b.FooBarBaz",
+        "c.d.FooBar",
+        "liptsoft.WishMaker",
+        "liptsoft.MindReader",
+        "TelephoneOperator",
+        "ScubaArgentineOperator",
+        "YoureLeavingUsHere",
+        "YouveComeToThisPoint",
+        "YourEyesAreSpinningInTheirSockets"
+    ))
 
-    Character.alphabet = EnglishAlphabet
-    println(One(Character).parse(pattern))
+    println(intellijIdeaIshSearcher.search("a"))
 }
