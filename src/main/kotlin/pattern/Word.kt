@@ -1,7 +1,6 @@
 package pattern
 
 import pattern.basic.Many
-import pattern.basic.One
 import pattern.basic.True
 
 object Word : PatternParser() {
@@ -17,5 +16,5 @@ object UppercaseWord : PatternParser() {
 }
 
 object CamelcaseWord: PatternParser() {
-    override val parse: (String) -> PatternParserParseResult = One(AlphabetUppercaseCharacter).then(LowercaseWord.or(True)).parse
+    override val parse: (String) -> PatternParserParseResult = AlphabetUppercaseCharacter.then(LowercaseWord.or(True)).parse
 }
