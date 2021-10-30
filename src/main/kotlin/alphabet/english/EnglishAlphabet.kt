@@ -3,8 +3,6 @@ package alphabet.english
 import alphabet.Alphabet
 
 object EnglishAlphabet: Alphabet {
-    override val alias: String = "ENG"
-
     override val letters: List<Char> = listOf(
             'A',
             'B', 
