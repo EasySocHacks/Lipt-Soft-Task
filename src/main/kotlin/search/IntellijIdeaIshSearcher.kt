@@ -52,7 +52,7 @@ class IntellijIdeaIshSearcher(names: List<String>) : Searcher(names) {
                         collect(
                             Many(
                                 SkipSUntil(
-                                    ToLowercase(
+                                    CompareWithLowercase(
                                         either(
                                             AlphabetLowercaseCharacter,
                                             Wildcard

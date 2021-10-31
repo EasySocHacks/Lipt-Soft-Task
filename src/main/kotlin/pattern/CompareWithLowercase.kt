@@ -1,16 +1,16 @@
 package pattern
 
 import pattern.basic.False
-import token.ToLowercase
+import token.CompareWithLowercase
 
-class ToLowercase(patternParser: PatternParser) : PatternParser() {
+class CompareWithLowercase(patternParser: PatternParser) : PatternParser() {
     override val parse: (String) -> PatternParserParseResult = { pattern ->
         val parsedPattern = patternParser.parse(pattern)
 
         when (parsedPattern.parsed) {
             true -> PatternParserParseResult(
                 true,
-                ToLowercase(parsedPattern.token),
+                CompareWithLowercase(parsedPattern.token),
                 parsedPattern.pattern
             )
 
