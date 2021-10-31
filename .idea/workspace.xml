@@ -11,31 +11,8 @@
       <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/alphabet/english/EnglishAlphabet.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/alphabet/english/EnglishAlphabet.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pattern/AlphabetCharacter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pattern/Character.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pattern/EndOfClassName.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pattern/EndOfClassName.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pattern/Package.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pattern/Package.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pattern/PatternParser.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pattern/PatternParser.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pattern/SkipStart.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pattern/SkipSUntil.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pattern/ToLowercase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pattern/ToLowercase.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pattern/Wildcard.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pattern/Wildcard.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pattern/Word.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pattern/Word.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pattern/basic/And.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pattern/basic/And.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pattern/basic/EOF.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pattern/basic/EOF.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pattern/basic/Many.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pattern/basic/Many.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pattern/basic/OneOrZero.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pattern/basic/OneOrZero.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/search/IntellijIdeaIshSearcher.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/search/IntellijIdeaIshSearcher.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/token/SkipStart.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/token/SkipUntil.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/token/ToLowercase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/token/ToLowercase.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/token/basic/And.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/token/basic/And.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/token/basic/EOF.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/token/basic/EOF.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/token/basic/False.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/token/basic/False.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/token/basic/Or.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/token/basic/Or.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/token/basic/Skip.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/token/basic/Skip.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/token/basic/True.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/token/basic/True.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,6 +89,8 @@
     <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainKt" />
       <module name="LiptSoftTask.main" />
+      <option name="PROGRAM_PARAMETERS" value="-f src/main/resources/Input_sample.txt -p &quot;*&quot;" />
+      <shortenClasspath name="NONE" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -132,7 +111,7 @@
       <updated>1635601469401</updated>
       <workItem from="1635601470657" duration="74000" />
       <workItem from="1635607066852" duration="20797000" />
-      <workItem from="1635669847088" duration="2038000" />
+      <workItem from="1635669847088" duration="4991000" />
     </task>
     <task id="LOCAL-00001" summary="Init project + Add Alphabet">
       <created>1635607405109</created>
@@ -183,7 +162,21 @@
       <option name="project" value="LOCAL" />
       <updated>1635627667767</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Refactoring">
+      <created>1635672427250</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1635672427250</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Rename EOF patternParser to EndOfPattern">
+      <created>1635672666032</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1635672666032</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -197,7 +190,9 @@
     <MESSAGE value="Add Tokens" />
     <MESSAGE value="Add Searcher with Impl" />
     <MESSAGE value="Update Main test data" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update Main test data" />
+    <MESSAGE value="Refactoring" />
+    <MESSAGE value="Rename EOF patternParser to EndOfPattern" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rename EOF patternParser to EndOfPattern" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>
