@@ -1,7 +1,6 @@
 package pattern.basic
 
 import pattern.PatternParser
-import token.basic.False
 
 class Many(patternParser: PatternParser) : PatternParser() {
     override val parse: (String) -> PatternParserParseResult = { pattern ->
@@ -26,11 +25,7 @@ class Many(patternParser: PatternParser) : PatternParser() {
                 }
             }
 
-            false -> PatternParserParseResult(
-                false,
-                False,
-                pattern
-            )
+            false -> False.parse(pattern)
         }
     }
 }

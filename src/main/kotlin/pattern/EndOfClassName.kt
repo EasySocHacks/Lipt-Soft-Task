@@ -1,9 +1,9 @@
 package pattern
 
+import pattern.basic.False
 import token.basic.EOF
-import token.basic.False
 
-object EndOfClassName: PatternParser() {
+object EndOfClassName : PatternParser() {
     override val parse: (String) -> PatternParserParseResult = { pattern ->
         val parsedPattern = BlankCharacter.parse(pattern)
 
@@ -14,11 +14,7 @@ object EndOfClassName: PatternParser() {
                 parsedPattern.pattern
             )
 
-            false -> PatternParserParseResult(
-                false,
-                False,
-                pattern
-            )
+            false -> False.parse(pattern)
         }
     }
 }

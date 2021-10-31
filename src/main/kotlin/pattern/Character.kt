@@ -1,9 +1,9 @@
 package pattern
 
+import pattern.basic.False
+import pattern.basic.True
 import token.Token
 import token.Token.TokenMatchResult
-import token.basic.False
-import token.basic.True
 
 class Character(character: Char) : PatternParser() {
     override val parse: (String) -> PatternParserParseResult = { pattern ->
@@ -14,32 +14,7 @@ class Character(character: Char) : PatternParser() {
                 pattern.substring(1)
             )
 
-            false -> PatternParserParseResult(
-                false,
-                False,
-                pattern
-            )
-        }
-    }
-}
-
-object AlphabetCharacter : PatternParser() {
-    override val parse: (String) -> PatternParserParseResult = { pattern ->
-        when (pattern.isNotEmpty() &&
-                (alphabet.letters.contains(pattern.first().uppercaseChar()) ||
-                        alphabet.letters.contains(pattern.first().lowercaseChar()))
-        ) {
-            true -> PatternParserParseResult(
-                true,
-                CharacterToken(pattern.first()),
-                pattern.substring(1)
-            )
-
-            false -> PatternParserParseResult(
-                false,
-                False,
-                pattern
-            )
+            false -> False.parse(pattern)
         }
     }
 }
@@ -55,11 +30,7 @@ object AlphabetUppercaseCharacter : PatternParser() {
                 pattern.substring(1)
             )
 
-            false -> PatternParserParseResult(
-                false,
-                False,
-                pattern
-            )
+            false -> False.parse(pattern)
         }
     }
 }
@@ -75,11 +46,7 @@ object AlphabetLowercaseCharacter : PatternParser() {
                 pattern.substring(1)
             )
 
-            false -> PatternParserParseResult(
-                false,
-                False,
-                pattern
-            )
+            false -> False.parse(pattern)
         }
     }
 }
@@ -87,17 +54,9 @@ object AlphabetLowercaseCharacter : PatternParser() {
 object BlankCharacter : PatternParser() {
     override val parse: (String) -> PatternParserParseResult = { pattern ->
         when (pattern.isNotEmpty() && pattern[0].isWhitespace()) {
-            true -> PatternParserParseResult(
-                true,
-                True,
-                pattern.substring(1)
-            )
+            true -> True.parse(pattern.substring(1))
 
-            false -> PatternParserParseResult(
-                false,
-                False,
-                pattern
-            )
+            false -> False.parse(pattern)
         }
     }
 }
@@ -105,15 +64,9 @@ object BlankCharacter : PatternParser() {
 class CharacterToken(character: Char) : Token {
     override val match: (String) -> TokenMatchResult = { input ->
         when (input.isNotEmpty() && input.first() == character) {
-            true -> TokenMatchResult(
-                true,
-                input.substring(1)
-            )
+            true -> token.basic.True.match(input.substring(1))
 
-            false -> TokenMatchResult(
-                false,
-                input
-            )
+            false -> token.basic.False.match(input)
         }
     }
 }

@@ -9,7 +9,7 @@ import pattern.basic.True
 import token.Token
 
 abstract class PatternParser {
-    data class PatternParserParseResult (
+    data class PatternParserParseResult(
         val parsed: Boolean,
         val token: Token,
         val pattern: String

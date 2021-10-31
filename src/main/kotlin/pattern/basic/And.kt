@@ -1,7 +1,6 @@
 package pattern.basic
 
 import pattern.PatternParser
-import token.basic.False
 
 class And(firstPatternParser: PatternParser, secondPatternParser: PatternParser) : PatternParser() {
     override val parse: (String) -> PatternParserParseResult = { pattern ->
@@ -18,19 +17,11 @@ class And(firstPatternParser: PatternParser, secondPatternParser: PatternParser)
                         secondParse.pattern
                     )
 
-                    false -> PatternParserParseResult(
-                        false,
-                        False,
-                        pattern
-                    )
+                    false -> False.parse(pattern)
                 }
             }
 
-            false -> PatternParserParseResult(
-                false,
-                False,
-                pattern
-            )
+            false -> False.parse(pattern)
         }
     }
 }

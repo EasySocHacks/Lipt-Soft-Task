@@ -1,9 +1,9 @@
 package pattern
 
+import pattern.basic.False
 import token.ToLowercase
-import token.basic.False
 
-class ToLowercase(patternParser: PatternParser): PatternParser() {
+class ToLowercase(patternParser: PatternParser) : PatternParser() {
     override val parse: (String) -> PatternParserParseResult = { pattern ->
         val parsedPattern = patternParser.parse(pattern)
 
@@ -14,11 +14,7 @@ class ToLowercase(patternParser: PatternParser): PatternParser() {
                 parsedPattern.pattern
             )
 
-            false -> PatternParserParseResult(
-                false,
-                False,
-                pattern
-            )
+            false -> False.parse(pattern)
         }
     }
 }

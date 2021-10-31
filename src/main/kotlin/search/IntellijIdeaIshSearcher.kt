@@ -9,16 +9,18 @@ import pattern.basic.OneOrZero
 class IntellijIdeaIshSearcher(names: List<String>) : Searcher(names) {
     override val search: (String) -> List<String> = { pattern ->
         val wildcardPatterParse =
-            ManyOrZero(collect(
-                OneOrZero(LowercaseWord),
-                Wildcard,
-                OneOrZero(LowercaseWord)
-            ))
+            ManyOrZero(
+                collect(
+                    OneOrZero(LowercaseWord),
+                    Wildcard,
+                    OneOrZero(LowercaseWord)
+                )
+            )
 
         val patternParser =
             collect(
                 ManyOrZero(Package),
-                SkipStart(
+                SkipSUntil(
                     either(
                         collect(
                             either(
@@ -36,18 +38,28 @@ class IntellijIdeaIshSearcher(names: List<String>) : Searcher(names) {
                                     CamelcaseWord,
                                     wildcardPatterParse
                                 ),
-                                ManyOrZero(SkipStart(collect(
-                                    CamelcaseWord,
-                                    wildcardPatterParse
-                                ))),
+                                ManyOrZero(
+                                    SkipSUntil(
+                                        collect(
+                                            CamelcaseWord,
+                                            wildcardPatterParse
+                                        )
+                                    )
+                                ),
                                 ManyOrZero(EndOfClassName)
                             )
                         ),
                         collect(
-                            Many(SkipStart(ToLowercase(either(
-                                AlphabetLowercaseCharacter,
-                                Wildcard
-                            )))),
+                            Many(
+                                SkipSUntil(
+                                    ToLowercase(
+                                        either(
+                                            AlphabetLowercaseCharacter,
+                                            Wildcard
+                                        )
+                                    )
+                                )
+                            ),
                             ManyOrZero(EndOfClassName)
                         )
                     )
