@@ -1,7 +1,7 @@
 package search
 
 import pattern.*
-import pattern.basic.EOF
+import pattern.basic.EndOfPattern
 import pattern.basic.Many
 import pattern.basic.ManyOrZero
 import pattern.basic.OneOrZero
@@ -64,7 +64,7 @@ class IntellijIdeaIshSearcher(names: List<String>) : Searcher(names) {
                         )
                     )
                 )
-            ).then(EOF)
+            ).then(EndOfPattern)
 
         val parsedPattern = patternParser.parse(pattern)
 
