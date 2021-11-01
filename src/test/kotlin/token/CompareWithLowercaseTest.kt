@@ -1,9 +1,9 @@
 package token
 
-import com.nhaarman.mockitokotlin2.*
 import org.junit.jupiter.api.AfterEach
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
+import org.mockito.kotlin.*
 import token.Token.TokenMatchResult
 
 internal class CompareWithLowercaseTest {

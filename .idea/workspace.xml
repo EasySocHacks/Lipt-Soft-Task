@@ -10,15 +10,9 @@
       <change afterPath="$PROJECT_DIR$/src/test/kotlin/pattern/basic/FalseTest.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/kotlin/pattern/basic/ManyOrZeroTest.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/kotlin/pattern/basic/ManyTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/pattern/basic/OneOrZeroTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/pattern/basic/OrTest.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/kotlin/pattern/basic/TrueTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/token/CompareWithLowercaseTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/token/SkipUntilTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/token/basic/AndTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/token/basic/EOFTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/token/basic/FalseTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/token/basic/OrTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/token/basic/SkipTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/token/basic/TrueTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -26,12 +20,8 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pattern/ToLowercase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pattern/CompareWithLowercase.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/search/IntellijIdeaIshSearcher.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/search/IntellijIdeaIshSearcher.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/token/ToLowercase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/token/CompareWithLowercase.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +96,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -131,8 +121,8 @@
       <recent name="token.basic" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ManyTest.Many pattern parser parse false on internal pattern parser parse false">
-    <configuration name="EndOfPatternTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.Tests in 'LiptSoftTask.test'">
+    <configuration name="OrTest.And pattern parser parse true on first internal parsers parse true" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -145,7 +135,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;pattern.basic.EndOfPatternTest&quot;" />
+            <option value="&quot;pattern.basic.OrTest.And pattern parser parse true on first internal parsers parse true&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -155,7 +145,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="EndOfPatternTest.EndOfPattern parse true on empty pattern" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="OrTest.Or pattern parser parse false on both internal parsers parse false" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -168,7 +158,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;pattern.basic.EndOfPatternTest.EndOfPattern parse true on empty pattern&quot;" />
+            <option value="&quot;pattern.basic.OrTest.Or pattern parser parse false on both internal parsers parse false&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -178,7 +168,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ManyTest.Many pattern parser parse false on internal pattern parser parse false" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="OrTest.Or pattern parser parse true on second internal parsers parse true (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -191,7 +181,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;pattern.basic.ManyTest.Many pattern parser parse false on internal pattern parser parse false&quot;" />
+            <option value="&quot;pattern.basic.OrTest.Or pattern parser parse true on second internal parsers parse true&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -201,7 +191,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ManyTest.Many pattern parser parse true on internal pattern parser parse true and match all repeated results" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Tests in 'LiptSoftTask.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -213,8 +203,6 @@
         <option name="taskNames">
           <list>
             <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;pattern.basic.ManyTest.Many pattern parser parse true on internal pattern parser parse true and match all repeated results&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -224,7 +212,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ManyTest.Many pattern parser parse true on internal pattern parser parse true" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Tests in 'basic'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -237,7 +225,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;pattern.basic.ManyTest.Many pattern parser parse true on internal pattern parser parse true&quot;" />
+            <option value="&quot;pattern.basic.*&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -248,19 +236,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Gradle.EndOfPatternTest" />
-      <item itemvalue="Gradle.EndOfPatternTest.EndOfPattern parse true on empty pattern" />
-      <item itemvalue="Gradle.ManyTest.Many pattern parser parse true on internal pattern parser parse true and match all repeated results" />
-      <item itemvalue="Gradle.ManyTest.Many pattern parser parse true on internal pattern parser parse true" />
-      <item itemvalue="Gradle.ManyTest.Many pattern parser parse false on internal pattern parser parse false" />
+      <item itemvalue="Gradle.OrTest.And pattern parser parse true on first internal parsers parse true" />
+      <item itemvalue="Gradle.OrTest.Or pattern parser parse true on second internal parsers parse true (1)" />
+      <item itemvalue="Gradle.OrTest.Or pattern parser parse false on both internal parsers parse false" />
+      <item itemvalue="Gradle.Tests in 'basic'" />
+      <item itemvalue="Gradle.Tests in 'LiptSoftTask.test'" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ManyTest.Many pattern parser parse false on internal pattern parser parse false" />
-        <item itemvalue="Gradle.ManyTest.Many pattern parser parse true on internal pattern parser parse true" />
-        <item itemvalue="Gradle.ManyTest.Many pattern parser parse true on internal pattern parser parse true and match all repeated results" />
-        <item itemvalue="Gradle.EndOfPatternTest" />
-        <item itemvalue="Gradle.EndOfPatternTest.EndOfPattern parse true on empty pattern" />
+        <item itemvalue="Gradle.Tests in 'LiptSoftTask.test'" />
+        <item itemvalue="Gradle.Tests in 'basic'" />
+        <item itemvalue="Gradle.OrTest.Or pattern parser parse false on both internal parsers parse false" />
+        <item itemvalue="Gradle.OrTest.Or pattern parser parse true on second internal parsers parse true (1)" />
+        <item itemvalue="Gradle.OrTest.And pattern parser parse true on first internal parsers parse true" />
       </list>
     </recent_temporary>
   </component>
@@ -274,7 +262,11 @@
       <updated>1635601469401</updated>
       <workItem from="1635601470657" duration="74000" />
       <workItem from="1635607066852" duration="20797000" />
-      <workItem from="1635669847088" duration="13298000" />
+      <workItem from="1635669847088" duration="14339000" />
+      <workItem from="1635696878160" duration="614000" />
+      <workItem from="1635752455285" duration="1186000" />
+      <workItem from="1635767951602" duration="651000" />
+      <workItem from="1635796913617" duration="80000" />
     </task>
     <task id="LOCAL-00001" summary="Init project + Add Alphabet">
       <created>1635607405109</created>
@@ -346,7 +338,21 @@
       <option name="project" value="LOCAL" />
       <updated>1635676731554</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Refactoring">
+      <created>1635685000607</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1635685000607</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Add tests for Tokens">
+      <created>1635685027338</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1635685027338</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -360,10 +366,11 @@
     <MESSAGE value="Add Tokens" />
     <MESSAGE value="Add Searcher with Impl" />
     <MESSAGE value="Update Main test data" />
-    <MESSAGE value="Refactoring" />
     <MESSAGE value="Rename EOF patternParser to EndOfPattern" />
     <MESSAGE value="Add argument-based program start" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add argument-based program start" />
+    <MESSAGE value="Refactoring" />
+    <MESSAGE value="Add tests for Tokens" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add tests for Tokens" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -378,6 +385,7 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/LiptSoftTask$Tests_in__basic_.ic" NAME="Tests in 'basic' Coverage Results" MODIFIED="1635685809330" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/LiptSoftTask$Tests_in__LiptSoftTask_test_.ic" NAME="Tests in 'LiptSoftTask.test' Coverage Results" MODIFIED="1635681552016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
