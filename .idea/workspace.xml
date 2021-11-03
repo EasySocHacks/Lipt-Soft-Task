@@ -6,7 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="989f2f93-d910-4651-987f-aeb3ddbf4155" name="Changes" comment="Add tests for Tokens">
       <change afterPath="$PROJECT_DIR$/src/test/kotlin/pattern/CharacterTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/pattern/CompareWithLowercaseTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/pattern/EndOfClassNameTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/pattern/PackageTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/pattern/SkipUntilTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/pattern/WildcardUntilTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/pattern/WithLowercaseInputTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/pattern/WordTest.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/kotlin/pattern/basic/AndTest.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/kotlin/pattern/basic/EndOfPatternTest.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/kotlin/pattern/basic/FalseTest.kt" afterDir="false" />
@@ -22,11 +27,16 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pattern/CompareWithLowercase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pattern/WithLowercaseInput.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pattern/Character.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pattern/Character.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/pattern/EndOfClassName.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pattern/EndOfClassName.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pattern/SkipSUntil.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pattern/SkipUntil.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pattern/Wildcard.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pattern/WildcardUntil.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pattern/basic/Many.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pattern/basic/Many.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/search/IntellijIdeaIshSearcher.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/search/IntellijIdeaIshSearcher.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/token/CompareWithLowercase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/token/CompareWithLowercaseInput.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/token/SkipUntil.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/token/SkipUntil.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/token/basic/And.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/token/basic/And.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/token/CompareWithLowercaseTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/token/CompareWithLowercaseInputTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/token/SkipUntilTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/token/SkipUntilTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,8 +137,8 @@
       <recent name="token.basic" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.CompareWithLowercaseInputTest">
-    <configuration name="CharacterTest.AlphabetLowercaseCharacter token parse false on pattern does not contains any alphabet character in lowercase" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.Tests in 'LiptSoftTask.test'">
+    <configuration name="Tests in 'LiptSoftTask.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -140,8 +150,6 @@
         <option name="taskNames">
           <list>
             <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;pattern.CharacterTest.AlphabetLowercaseCharacter token parse false on pattern does not contains any alphabet character in lowercase&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -151,7 +159,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="CharacterTest.BlankCharacter token parse true on pattern contains any whitespace character" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="WordTest.CamelcaseWord pattern parser returns false on non-camelcase input pattern" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -164,7 +172,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;pattern.CharacterTest.BlankCharacter token parse true on pattern contains any whitespace character&quot;" />
+            <option value="&quot;pattern.WordTest.CamelcaseWord pattern parser returns false on non-camelcase input pattern&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -174,7 +182,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="CharacterTest.EndOfPatternBlankCharacter token parse false on pattern does not contains any whitespace character" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="WordTest.CamelcaseWord pattern parser returns true on camelcase input pattern" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -187,7 +195,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;pattern.CharacterTest.EndOfPatternBlankCharacter token parse false on pattern does not contains any whitespace character&quot;" />
+            <option value="&quot;pattern.WordTest.CamelcaseWord pattern parser returns true on camelcase input pattern&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -197,7 +205,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="CharacterTest.EndOfPatternBlankCharacter token parse true on pattern contains any whitespace character" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="WordTest.CamelcaseWord pattern parser returns true on lowercase input pattern" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -210,7 +218,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;pattern.CharacterTest.EndOfPatternBlankCharacter token parse true on pattern contains any whitespace character&quot;" />
+            <option value="&quot;pattern.WordTest.CamelcaseWord pattern parser returns true on lowercase input pattern&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -220,7 +228,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="CompareWithLowercaseInputTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="WordTest.LowercaseWord pattern parser returns false on non-lowercase input pattern" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -233,7 +241,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;token.CompareWithLowercaseInputTest&quot;" />
+            <option value="&quot;pattern.WordTest.LowercaseWord pattern parser returns false on non-lowercase input pattern&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -244,19 +252,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Gradle.CharacterTest.AlphabetLowercaseCharacter token parse false on pattern does not contains any alphabet character in lowercase" />
-      <item itemvalue="Gradle.CharacterTest.BlankCharacter token parse true on pattern contains any whitespace character" />
-      <item itemvalue="Gradle.CharacterTest.EndOfPatternBlankCharacter token parse true on pattern contains any whitespace character" />
-      <item itemvalue="Gradle.CharacterTest.EndOfPatternBlankCharacter token parse false on pattern does not contains any whitespace character" />
-      <item itemvalue="Gradle.CompareWithLowercaseInputTest" />
+      <item itemvalue="Gradle.WordTest.LowercaseWord pattern parser returns false on non-lowercase input pattern" />
+      <item itemvalue="Gradle.WordTest.CamelcaseWord pattern parser returns true on lowercase input pattern" />
+      <item itemvalue="Gradle.WordTest.CamelcaseWord pattern parser returns false on non-camelcase input pattern" />
+      <item itemvalue="Gradle.WordTest.CamelcaseWord pattern parser returns true on camelcase input pattern" />
+      <item itemvalue="Gradle.Tests in 'LiptSoftTask.test'" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.CompareWithLowercaseInputTest" />
-        <item itemvalue="Gradle.CharacterTest.EndOfPatternBlankCharacter token parse false on pattern does not contains any whitespace character" />
-        <item itemvalue="Gradle.CharacterTest.EndOfPatternBlankCharacter token parse true on pattern contains any whitespace character" />
-        <item itemvalue="Gradle.CharacterTest.BlankCharacter token parse true on pattern contains any whitespace character" />
-        <item itemvalue="Gradle.CharacterTest.AlphabetLowercaseCharacter token parse false on pattern does not contains any alphabet character in lowercase" />
+        <item itemvalue="Gradle.Tests in 'LiptSoftTask.test'" />
+        <item itemvalue="Gradle.WordTest.CamelcaseWord pattern parser returns true on camelcase input pattern" />
+        <item itemvalue="Gradle.WordTest.CamelcaseWord pattern parser returns false on non-camelcase input pattern" />
+        <item itemvalue="Gradle.WordTest.CamelcaseWord pattern parser returns true on lowercase input pattern" />
+        <item itemvalue="Gradle.WordTest.LowercaseWord pattern parser returns false on non-lowercase input pattern" />
       </list>
     </recent_temporary>
   </component>
@@ -275,7 +283,7 @@
       <workItem from="1635752455285" duration="1186000" />
       <workItem from="1635767951602" duration="651000" />
       <workItem from="1635796913617" duration="2937000" />
-      <workItem from="1635964696100" duration="2694000" />
+      <workItem from="1635964696100" duration="8292000" />
     </task>
     <task id="LOCAL-00001" summary="Init project + Add Alphabet">
       <created>1635607405109</created>
@@ -375,7 +383,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635967136355</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Renaming">
+      <created>1635967460768</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1635967460768</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -395,7 +410,8 @@
     <MESSAGE value="Add tests for Tokens" />
     <MESSAGE value="Change Mockito dependency" />
     <MESSAGE value="Move Character token to token directory" />
-    <option name="LAST_COMMIT_MESSAGE" value="Move Character token to token directory" />
+    <MESSAGE value="Renaming" />
+    <option name="LAST_COMMIT_MESSAGE" value="Renaming" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -403,8 +419,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/main/kotlin/pattern/basic/Many.kt</url>
-          <line>5</line>
-          <option name="timeStamp" value="5" />
+          <line>6</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/test/kotlin/pattern/WithLowercaseInputTest.kt</url>
+          <line>38</line>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -20,7 +20,7 @@ class Many(patternParser: PatternParser) : PatternParser() {
                     false -> PatternParserParseResult(
                         true,
                         parsedPattern.token,
-                        manyParsed.pattern
+                        parsedPattern.pattern
                     )
                 }
             }

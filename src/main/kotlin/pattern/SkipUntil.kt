@@ -1,20 +1,20 @@
 package pattern
 
 import pattern.basic.False
-import token.basic.Skip
+import token.SkipUntil
 
-object Wildcard : PatternParser() {
+class SkipUntil(patternParser: PatternParser) : PatternParser() {
     override val parse: (String) -> PatternParserParseResult = { pattern ->
-        val parsedPattern = Character('*').parse(pattern)
+        val parsedPattern = patternParser.parse(pattern)
 
         when (parsedPattern.parsed) {
             true -> PatternParserParseResult(
                 true,
-                Skip,
+                SkipUntil(parsedPattern.token),
                 parsedPattern.pattern
             )
 
-            false -> False.parse(pattern)
+            false -> False.parse(parsedPattern.pattern)
         }
     }
 }

@@ -1,7 +1,6 @@
 package pattern
 
 import pattern.basic.False
-import pattern.basic.True
 import token.Character
 
 class Character(character: Char) : PatternParser() {
@@ -50,10 +49,14 @@ object AlphabetLowercaseCharacter : PatternParser() {
     }
 }
 
-object EndOfPatternBlankCharacter : PatternParser() {
+object BlankCharacter : PatternParser() {
     override val parse: (String) -> PatternParserParseResult = { pattern ->
         when (pattern.isNotEmpty() && pattern[0].isWhitespace()) {
-            true -> True.parse(pattern.substring(1))
+            true -> PatternParserParseResult(
+                true,
+                Character(pattern.first()),
+                pattern.substring(1)
+            )
 
             false -> False.parse(pattern)
         }

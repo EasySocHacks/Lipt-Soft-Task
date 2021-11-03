@@ -8,7 +8,14 @@ class And(firstToken: Token, secondToken: Token) : Token {
         val firstMatch = firstToken.match(input)
 
         when (firstMatch.matched) {
-            true -> secondToken.match(firstMatch.rest)
+            true -> {
+                val secondMatch = secondToken.match(firstMatch.rest)
+
+                when (secondMatch.matched) {
+                    true -> secondMatch
+                    false -> False.match(input)
+                }
+            }
             false -> False.match(input)
         }
     }

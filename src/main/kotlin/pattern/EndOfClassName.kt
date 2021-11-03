@@ -5,7 +5,7 @@ import token.basic.EOF
 
 object EndOfClassName : PatternParser() {
     override val parse: (String) -> PatternParserParseResult = { pattern ->
-        val parsedPattern = EndOfPatternBlankCharacter.parse(pattern)
+        val parsedPattern = BlankCharacter.parse(pattern)
 
         when (parsedPattern.parsed) {
             true -> PatternParserParseResult(

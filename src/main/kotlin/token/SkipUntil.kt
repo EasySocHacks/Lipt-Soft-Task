@@ -19,9 +19,16 @@ class SkipUntil(token: Token) : Token {
                         val skipMatch = Skip.match(input)
 
                         when (skipMatch.matched) {
-                            true -> SkipUntil(token).match(skipMatch.rest)
+                            true -> {
+                                val innerSkipUUntil = SkipUntil(token).match(skipMatch.rest)
 
-                            false -> False.match(skipMatch.rest)
+                                when (innerSkipUUntil.matched) {
+                                    true -> innerSkipUUntil
+                                    false -> False.match(input)
+                                }
+                            }
+
+                            false -> False.match(input)
                         }
                     }
                 }
