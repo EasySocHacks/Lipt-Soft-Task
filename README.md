@@ -52,3 +52,22 @@ either(
 )
 // Matches 'a' input prefix or 'b' in case of first condition if false 
 ```
+
+# Run
+To run the project go to [Main.kt](src/main/kotlin/Main.kt) and run it with the following program arguments:
+```
+[Required] Path to file consisting of input data:
+-f <filename>
+--filename <filename>
+
+[Required] Pattern:
+-p <pattern>
+--pattern <pattern>
+```
+
+## Input data
+Input data is a simple file full of class names data. [Here](src/main/resources/Input_sample.txt) you can see an example of input data.
+
+## Pattern
+Pattern for [IntellijIdeaIshSearcher](src/main/kotlin/search/IntellijIdeaIshSearcher.kt) is a string described [here](TASK_DESCRIPTION.md).
+Any other patterns wouldn't be parsed and search result will be an empty list consequently.
