@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test
 import org.mockito.kotlin.*
 import token.Token.TokenMatchResult
 
-internal class CompareWithLowercaseTest {
+internal class CompareWithLowercaseInputTest {
     private val token = mock<Token>()
 
     @AfterEach
@@ -30,10 +30,10 @@ internal class CompareWithLowercaseTest {
             }
         }
 
-        assertEquals(TokenMatchResult(true, ""), CompareWithLowercase(token).match("abacaba"))
-        assertEquals(TokenMatchResult(true, ""), CompareWithLowercase(token).match("ABACABA"))
-        assertEquals(TokenMatchResult(true, ""), CompareWithLowercase(token).match("AbAcAbA"))
-        assertEquals(TokenMatchResult(true, ""), CompareWithLowercase(token).match("abaCABA"))
+        assertEquals(TokenMatchResult(true, ""), CompareWithLowercaseInput(token).match("abacaba"))
+        assertEquals(TokenMatchResult(true, ""), CompareWithLowercaseInput(token).match("ABACABA"))
+        assertEquals(TokenMatchResult(true, ""), CompareWithLowercaseInput(token).match("AbAcAbA"))
+        assertEquals(TokenMatchResult(true, ""), CompareWithLowercaseInput(token).match("abaCABA"))
 
         verify(token, times(4)).match
     }

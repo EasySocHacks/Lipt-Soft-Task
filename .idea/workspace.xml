@@ -20,21 +20,7 @@
       <change afterPath="$PROJECT_DIR$/src/test/kotlin/pattern/basic/OneOrZeroTest.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/kotlin/pattern/basic/OrTest.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/kotlin/pattern/basic/TrueTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pattern/Character.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pattern/Character.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pattern/EndOfClassName.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pattern/EndOfClassName.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pattern/SkipSUntil.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pattern/SkipUntil.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pattern/Wildcard.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pattern/WildcardUntil.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pattern/basic/Many.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pattern/basic/Many.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/search/IntellijIdeaIshSearcher.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/search/IntellijIdeaIshSearcher.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/token/SkipUntil.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/token/SkipUntil.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/token/basic/And.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/token/basic/And.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/token/CompareWithLowercaseTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/token/CompareWithLowercaseInputTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/token/SkipUntilTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/token/SkipUntilTest.kt" afterDir="false" />
     </list>
@@ -283,7 +269,7 @@
       <workItem from="1635752455285" duration="1186000" />
       <workItem from="1635767951602" duration="651000" />
       <workItem from="1635796913617" duration="2937000" />
-      <workItem from="1635964696100" duration="8292000" />
+      <workItem from="1635964696100" duration="8604000" />
     </task>
     <task id="LOCAL-00001" summary="Init project + Add Alphabet">
       <created>1635607405109</created>
@@ -390,7 +376,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635967460768</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Bug fix + refactoring">
+      <created>1635973300957</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1635973300957</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -411,7 +404,8 @@
     <MESSAGE value="Change Mockito dependency" />
     <MESSAGE value="Move Character token to token directory" />
     <MESSAGE value="Renaming" />
-    <option name="LAST_COMMIT_MESSAGE" value="Renaming" />
+    <MESSAGE value="Bug fix + refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bug fix + refactoring" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -432,6 +426,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/LiptSoftTask$Tests_in__basic_.ic" NAME="Tests in 'basic' Coverage Results" MODIFIED="1635685809330" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/LiptSoftTask$Tests_in__LiptSoftTask_test_.ic" NAME="Tests in 'LiptSoftTask.test' Coverage Results" MODIFIED="1635681552016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/LiptSoftTask$Tests_in__LiptSoftTask_test_.ic" NAME="Tests in 'LiptSoftTask.test' Coverage Results" MODIFIED="1635973164503" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

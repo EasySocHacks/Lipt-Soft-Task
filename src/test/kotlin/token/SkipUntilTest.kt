@@ -51,9 +51,9 @@ internal class SkipUntilTest {
             }
         }
 
-        assertEquals(TokenMatchResult(false, ""), SkipUntil(token).match("zczczcdcgfdg"))
+        assertEquals(TokenMatchResult(false, "zczczcdcgfdg"), SkipUntil(token).match("zczczcdcgfdg"))
         assertEquals(TokenMatchResult(false, ""), SkipUntil(token).match(""))
-        assertEquals(TokenMatchResult(false, ""), SkipUntil(token).match(" "))
+        assertEquals(TokenMatchResult(false, " "), SkipUntil(token).match(" "))
 
         verify(token, times(13)).match
     }
