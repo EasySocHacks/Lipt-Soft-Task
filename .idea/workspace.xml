@@ -5,24 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="989f2f93-d910-4651-987f-aeb3ddbf4155" name="Changes" comment="Add tests for Tokens">
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/pattern/CharacterTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/pattern/EndOfClassNameTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/pattern/PackageTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/pattern/SkipUntilTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/pattern/WildcardUntilTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/pattern/WithLowercaseInputTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/pattern/WordTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/pattern/basic/AndTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/pattern/basic/EndOfPatternTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/pattern/basic/FalseTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/pattern/basic/ManyOrZeroTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/pattern/basic/ManyTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/pattern/basic/OneOrZeroTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/pattern/basic/OrTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/pattern/basic/TrueTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/search/IntellijIdeaIshSearcherTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pattern/Package.kt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/search/IntellijIdeaIshSearcher.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/search/IntellijIdeaIshSearcher.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/token/CompareWithLowercaseTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/token/CompareWithLowercaseInputTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/token/SkipUntilTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/token/SkipUntilTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/pattern/PackageTest.kt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,8 +58,8 @@
         <option value="Kotlin Interface" />
         <option value="Class" />
         <option value="Kotlin Object" />
-        <option value="Kotlin Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -117,35 +110,15 @@
       <recent name="token.character" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="search" />
       <recent name="pattern" />
       <recent name="token" />
       <recent name="pattern.basic" />
       <recent name="token.basic" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Tests in 'LiptSoftTask.test'">
-    <configuration name="Tests in 'LiptSoftTask.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="WordTest.CamelcaseWord pattern parser returns false on non-camelcase input pattern" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.IntellijIdeaIshSearcherTest">
+    <configuration name="IntellijIdeaIshSearcherTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -158,7 +131,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;pattern.WordTest.CamelcaseWord pattern parser returns false on non-camelcase input pattern&quot;" />
+            <option value="&quot;search.IntellijIdeaIshSearcherTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -168,7 +141,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="WordTest.CamelcaseWord pattern parser returns true on camelcase input pattern" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="IntellijIdeaIshSearcherTest.IntelliJIdeaIshSearcher finds with whitespace on the end of pattern" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -181,7 +154,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;pattern.WordTest.CamelcaseWord pattern parser returns true on camelcase input pattern&quot;" />
+            <option value="&quot;search.IntellijIdeaIshSearcherTest.IntelliJIdeaIshSearcher finds with whitespace on the end of pattern&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -191,7 +164,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="WordTest.CamelcaseWord pattern parser returns true on lowercase input pattern" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="IntellijIdeaIshSearcherTest.IntelliJIdeaIshSearcher finds with wildcard in pattern" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -204,7 +177,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;pattern.WordTest.CamelcaseWord pattern parser returns true on lowercase input pattern&quot;" />
+            <option value="&quot;search.IntellijIdeaIshSearcherTest.IntelliJIdeaIshSearcher finds with wildcard in pattern&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -214,7 +187,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="WordTest.LowercaseWord pattern parser returns false on non-lowercase input pattern" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="IntellijIdeaIshSearcherTest.IntellijIdeaIshSearcher finds by camelcase pattern with lowercase word in front of it" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -227,7 +200,30 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;pattern.WordTest.LowercaseWord pattern parser returns false on non-lowercase input pattern&quot;" />
+            <option value="&quot;search.IntellijIdeaIshSearcherTest.IntellijIdeaIshSearcher finds by camelcase pattern with lowercase word in front of it&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="IntellijIdeaIshSearcherTest.IntellijIdeaIshSearcher finds by lowercase pattern" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;search.IntellijIdeaIshSearcherTest.IntellijIdeaIshSearcher finds by lowercase pattern&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -238,19 +234,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Gradle.WordTest.LowercaseWord pattern parser returns false on non-lowercase input pattern" />
-      <item itemvalue="Gradle.WordTest.CamelcaseWord pattern parser returns true on lowercase input pattern" />
-      <item itemvalue="Gradle.WordTest.CamelcaseWord pattern parser returns false on non-camelcase input pattern" />
-      <item itemvalue="Gradle.WordTest.CamelcaseWord pattern parser returns true on camelcase input pattern" />
-      <item itemvalue="Gradle.Tests in 'LiptSoftTask.test'" />
+      <item itemvalue="Gradle.IntellijIdeaIshSearcherTest.IntellijIdeaIshSearcher finds by camelcase pattern with lowercase word in front of it" />
+      <item itemvalue="Gradle.IntellijIdeaIshSearcherTest.IntellijIdeaIshSearcher finds by lowercase pattern" />
+      <item itemvalue="Gradle.IntellijIdeaIshSearcherTest.IntelliJIdeaIshSearcher finds with whitespace on the end of pattern" />
+      <item itemvalue="Gradle.IntellijIdeaIshSearcherTest.IntelliJIdeaIshSearcher finds with wildcard in pattern" />
+      <item itemvalue="Gradle.IntellijIdeaIshSearcherTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.Tests in 'LiptSoftTask.test'" />
-        <item itemvalue="Gradle.WordTest.CamelcaseWord pattern parser returns true on camelcase input pattern" />
-        <item itemvalue="Gradle.WordTest.CamelcaseWord pattern parser returns false on non-camelcase input pattern" />
-        <item itemvalue="Gradle.WordTest.CamelcaseWord pattern parser returns true on lowercase input pattern" />
-        <item itemvalue="Gradle.WordTest.LowercaseWord pattern parser returns false on non-lowercase input pattern" />
+        <item itemvalue="Gradle.IntellijIdeaIshSearcherTest" />
+        <item itemvalue="Gradle.IntellijIdeaIshSearcherTest.IntelliJIdeaIshSearcher finds with wildcard in pattern" />
+        <item itemvalue="Gradle.IntellijIdeaIshSearcherTest.IntelliJIdeaIshSearcher finds with whitespace on the end of pattern" />
+        <item itemvalue="Gradle.IntellijIdeaIshSearcherTest.IntellijIdeaIshSearcher finds by lowercase pattern" />
+        <item itemvalue="Gradle.IntellijIdeaIshSearcherTest.IntellijIdeaIshSearcher finds by camelcase pattern with lowercase word in front of it" />
       </list>
     </recent_temporary>
   </component>
@@ -269,7 +265,7 @@
       <workItem from="1635752455285" duration="1186000" />
       <workItem from="1635767951602" duration="651000" />
       <workItem from="1635796913617" duration="2937000" />
-      <workItem from="1635964696100" duration="8604000" />
+      <workItem from="1635964696100" duration="11659000" />
     </task>
     <task id="LOCAL-00001" summary="Init project + Add Alphabet">
       <created>1635607405109</created>
@@ -383,7 +379,21 @@
       <option name="project" value="LOCAL" />
       <updated>1635973300957</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Fix tests">
+      <created>1635973353712</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1635973353712</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Add pattern tests">
+      <created>1635973377520</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1635973377520</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -405,21 +415,23 @@
     <MESSAGE value="Move Character token to token directory" />
     <MESSAGE value="Renaming" />
     <MESSAGE value="Bug fix + refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bug fix + refactoring" />
+    <MESSAGE value="Fix tests" />
+    <MESSAGE value="Add pattern tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add pattern tests" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/main/kotlin/pattern/basic/Many.kt</url>
-          <line>6</line>
-          <option name="timeStamp" value="9" />
+          <url>file://$PROJECT_DIR$/src/test/kotlin/pattern/WithLowercaseInputTest.kt</url>
+          <line>34</line>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/test/kotlin/pattern/WithLowercaseInputTest.kt</url>
-          <line>38</line>
-          <option name="timeStamp" value="15" />
+          <url>file://$PROJECT_DIR$/src/main/kotlin/pattern/basic/Many.kt</url>
+          <line>6</line>
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
